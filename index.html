@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitual</title>
+    <link rel="icon" type="image/ico" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="./img/Habitual Branding.png" alt="habitual logo" class="brand-img">
+
+    <div class="background-toggles" title="Change Background">
+        <div class="background-1" onclick="changeBg('1')"></div>
+        <div class="background-2" onclick="changeBg('2')"></div>
+        <div class="background-3" onclick="changeBg('3')"></div>
+    </div>
+
+    <div class="wrapper">
+        <div class="text-container">
+            <h1 class="title">Find the stuff you’ll love.</h1>
+            <p class="text">Aliquam rhoncus pretium dolor volutpat lectus odio non tellus neque. Aliquet et purus nibh
+                bibendum integer etiam in enim nisi.</p>
+        </div>
+        <div class="app-store-btn">
+            <a href="https://www.apple.com/app-store/" target="_blank">
+                <img src="./img/App Store Badge US Black.png" alt="App Store">
+            </a>
+        </div>
+        <div class="google-play-btn">
+            <a href="https://play.google.com" target="_blank">
+                <img src="./img/Google Play Badge US.png" alt="Google Play">
+            </a>
+        </div>
+        <div class="main-image-container">
+            <img src="./img/iPhone 15.png" alt="Landing Page Mockup">
+        </div>
+        <img src="./img/Profile.png" alt="Profile Mockup" class="profile-img">
+        <img src="./img/Orders.png" alt="Orders Mockup" class="orders-img">
+        <img src="./img/Home.png" alt="Home Mockup" class="home-img">
+        <img src="./img/Cart.png" alt="Cart Mockup" class="cart-img">
+        <img src="./img/Product.png" alt="Product Mockup" class="product-img">
+    </div>
+    <!-- Script -->
+    <script>
+        const { body } = document;
+
+        function changeBg(number) {
+            let prevBg;
+            if (body.className) {
+                prevBg = body.className;
+            }
+            body.className = '';
+            switch (number) {
+                case '1':
+                    return (prevBg === 'background-1' ? false : body.classList.add('background-1'));
+                case '2':
+                    return (prevBg === 'background-2' ? false : body.classList.add('background-2'));
+                case '3':
+                    return (prevBg === 'background-3' ? false : body.classList.add('background-3'));
+                default:
+                    break;
+            }
+        }
+
+    </script>
+</body>
+
+</html>
