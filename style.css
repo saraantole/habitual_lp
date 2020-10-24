@@ -18,7 +18,6 @@ body {
     width: 1440px;
     height: 1379px;
     margin: auto;
-    z-index: -100;
 }
 
 .title {
@@ -59,6 +58,7 @@ body {
     height: 46.28px;
     left: 221px;
     top: 531px;
+    z-index: 100;
 }
 
 .app-store-btn img {
@@ -72,6 +72,7 @@ body {
     height: 46.28px;
     left: 381.81px;
     top: 531px;
+    z-index: 100;
 }
 
 .google-play-btn img {
@@ -135,7 +136,8 @@ body {
     position: absolute;
     right: 150px;
     top: 70px;
-    display: flex;
+    display: flex; 
+    z-index: 100;
 }
 
 .background-toggles>div {
